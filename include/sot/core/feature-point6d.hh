@@ -126,7 +126,7 @@ class SOTFEATUREPOINT6D_EXPORT FeaturePoint6d
     t_, tref_;
   VectorUTheta  error_th_;
   MatrixRotation R_, Rref_, Rt_, Rreft_;
-  dg::Matrix P_, Pinv_;
+  Eigen::Matrix<double, 3,3> P_, Pinv_;
   double accuracy_;
   void inverseJacobianRodrigues ();
 } ;
